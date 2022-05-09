@@ -1,0 +1,26 @@
+.form-check-input:checked,.form-check-label::before {
+    border-color: green !important;
+    background-color: green !important;
+}
+.card{
+    border-radius: 1rem !important;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19) !important;
+}
+.card img{
+    border-radius: 1rem 1rem 0 0 !important;
+}
+.move{
+    transition: 0.25s;
+}
+.move:hover{
+    transform: scale(1.05);
+}
+.icon-move {
+    transition: all 0.25s ease-out;
+}
+.icon-move:hover{
+    transform: rotate(-45deg);
+}
+.cursor-pointer{
+    cursor: pointer !important;
+}
