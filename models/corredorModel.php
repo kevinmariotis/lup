@@ -19,6 +19,20 @@
 
         }
 
+        public function getCorredor($correo,$contraseña)
+        {
+            $conexion = new ConexionDB;
+
+            $sql = "select * from corredor where email = '$correo' and contrasena = '$contraseña'";
+            $consultar = mysqli_query($conexion->conectar(),$sql) or die ("Error al insertar".mysqli_error($consultar));
+
+            if ($res = mysqli_fetch_array($consultar)){
+                return $res;
+            }
+
+            return false;
+        }
+
         public function updateCorredor($ced,$nom,$edad,$tel,$años,$pro,$email,$pass)
         {
             $conexion = new ConexionDB;
