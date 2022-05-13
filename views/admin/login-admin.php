@@ -25,13 +25,14 @@
     <link rel="stylesheet" href="../../assets/css/master.css">
 </head>
 <body class="bg-dark">
+    <?php include "../components/header.php";?>
 
         <div class="container p-4 mx-auto">
 
             <form method="POST" action="login-admin.php">
                 <div class="bg-light p-4  w-50 mx-auto rounded">
                     <div class="d-flex justify-content-center">
-                        <img src="../img/logo/LUP.png" alt="lOGO LUP" clase="ms-5">
+                        <img src="../../assets/img/logo/LUP.png" alt="lOGO LUP" clase="ms-5">
                     </div>
                     <legend class=" mb-3 text-center bg-light fs-1">ADMINISTRADOR</legend>
                     <div class="form-floating my-3">
@@ -54,7 +55,7 @@
             </form>
         </div>
                
-        <footer class="position-absolute bottom-0 w-100 py-4 bg-light">
+        <footer class="bottom-0 w-100 py-4 bg-light">
             <div class="container-fluid px-4">
                 <div class="d-flex align-items-center justify-content-between small">
                     <div class="text-muted">
